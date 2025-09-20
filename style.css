@@ -1,4 +1,4 @@
-/* Подключи шрифт тут */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 14px;
     color: white;
     background-color: black;
 
@@ -20,7 +19,8 @@ body {
     padding-bottom: 120px;
     margin: 0 auto;
 
-    /* Напиши ограничения тут */
+    max-width: 1920px;
+    min-width: 360px;
 }
 
 .header {
@@ -133,4 +133,25 @@ body {
     gap: 50px;
 }
 
-/* Напиши код ниже */
+@media screen and (max-width:1245px){
+    .header__title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .header__nav {
+        display: none;
+    }
+    .header__menu {
+        display: block;
+        padding: 30px;
+
+    }
+    .header__title {
+        font-size: 60px;
+    }
+    .header__overlay {
+        padding: 50px;
+    }
+}
